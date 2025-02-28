@@ -1,0 +1,22 @@
+{
+    "name": "idaravel/klien_apijurnal",
+    "description": "Klien API Jurnal untuk Laravel",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Idaravel\\KlienApijurnal\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "illuminate/support": "^8.0|^9.0|^10.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Idarcupu",
+            "email": "idarcupu@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
