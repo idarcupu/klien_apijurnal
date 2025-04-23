@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Idaravel;
+namespace Idaravel\KlienApijurnal;
 
 class ApiJurnal extends BackEnd {
 
