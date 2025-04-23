@@ -97,13 +97,14 @@ class ApiJurnal extends BackEnd {
     ]);
   }
 
-  public function inputCafe(array $komposisi, array $barang, string $metode_bayar){
+  public function inputCafe(array $komposisi, array $barang, string $metode_bayar, string $retur){
     return $this->reqPost("cafe", [
       'kunci_projek' => $this->kunci,
       'data' => [
         "komposisi" => $komposisi,
         "barang" => $barang,
-        "mbayar" => $metode_bayar
+        "mbayar" => $metode_bayar,
+        "retur" => $retur
       ]
     ]);
   }
