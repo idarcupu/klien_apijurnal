@@ -1,6 +1,6 @@
 <?php
 
-namespace Idaravel\KlienApijurnal;
+namespace App\Idaravel;
 
 use Closure;
 

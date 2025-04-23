@@ -1,6 +1,6 @@
 <?php
 
-namespace Idaravel\KlienApijurnal;
+namespace App\Idaravel;
 
 use Illuminate\Support\Facades\Http;
 
@@ -21,7 +21,13 @@ class BackEnd {
 
   protected function reqPost($path, $data){
     $url = $this->path($path);
-    $payload = Http::post($url, $data)->json();
+
+    try {
+      $payload = Http::post($url, $data)->json();
+    } catch (\Exception $e) {
+      abort(403, 'konfigurasi api-jurnal tidak valid.');
+    }
+
     return $this->ubahObjek($payload);
   }
 
